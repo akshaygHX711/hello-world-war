@@ -2,7 +2,8 @@ pipeline {
    agent any
     stages {
         stage('clone step') {
-            steps {
+            steps { 
+               sh 'rm -rf hello-world-war'
                 sh 'git clone https://github.com/akshaygHX711/hello-world-war.git'
             }
         }
