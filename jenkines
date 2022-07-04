@@ -1,0 +1,10 @@
+pipeline {
+    agent {label 'slave4'}
+    stages {'clone step'}
+        sh 'git clone https://github.com/akshaygHX711/hello-world-war.git'} {
+            steps {
+                
+            }
+        }
+    }
+}
